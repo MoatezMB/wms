@@ -1,0 +1,23 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <app-header1></app-header1>
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+
+        <!-- INNER PAGE BANNER -->
+        <app-banner *ngIf="(_data | json) != '{}'" [data]="_data"></app-banner>
+        <!-- INNER PAGE BANNER END -->
+
+        <router-outlet></router-outlet>
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1></app-footer1>
+    <!-- FOOTER END -->
+
+</div>
